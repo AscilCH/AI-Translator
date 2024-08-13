@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollyGlot</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="assets/worldmap.png" alt="World Map Background" class="world-map">
+            <img src="assets/parrot.png" alt="PollyGlot Logo" class="logo">
+            <h1>PollyGlot</h1>
+            <p style="color:white">Perfect Translation Every Time</p>
+        </div>
+        <div class="translate-section">
+            <label for="text-to-translate" class="section-title">Text to translate <span>👇</span></label>
+            <textarea id="text-to-translate" placeholder="How are you?"></textarea>
+            <label class="section-title">Select language <span>👇</span></label>
+            <div class="language-select">
+                <label for="french">
+                    <input type="radio" id="french" name="language" value="French">
+                    <img src="assets/fr-flag.png" alt="French Flag"> French
+                </label>
+                <label for="spanish">
+                    <input type="radio" id="spanish" name="language" value="Spanish">
+                    <img src="assets/sp-flag.png" alt="Spanish Flag"> Spanish
+                </label>
+                <label for="japanese">
+                    <input type="radio" id="japanese" name="language" value="Japanese">
+                    <img src="assets/jpn-flag.png" alt="Japanese Flag"> Japanese
+                </label>
+            </div>
+            <button id="translate-btn" class="translate-button">Translate</button>
+        </div>
+        <div class="result-section hidden">
+            <p hidden><strong>Original text:</strong> <span id="original-text"></span></p>
+            <p><strong>Your translation:</strong> <span id="translated-text"></span></p>
+            <button id="start-over" class="start-over-button">Start Over</button>
+        </div>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>

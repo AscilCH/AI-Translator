@@ -1,0 +1,172 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    width: 320px; /* Fixed width to match the design */
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+    position: relative;
+    height: 150px; /* Set a fixed height to manage content placement */
+}
+
+.world-map {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the background image */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(1.2); /* Brighten the background image */
+}
+
+.logo {
+    width: 60px; /* Slightly larger logo */
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #00C853; /* Green color for the application name */
+    position: relative;
+    z-index: 2;
+}
+
+p {
+    font-size: 12px;
+    margin: 0;
+    color: #555;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    font-size: 16px;
+    color: #0066CC;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #007BFF; /* Blue border to match the design */
+    font-size: 14px;
+}
+
+.language-select {
+    margin-bottom: 20px;
+}
+
+.language-select label {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.language-select input[type="radio"] {
+    margin-right: 10px;
+}
+
+.language-select img {
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 20px;
+    height: auto;
+}
+
+.translate-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.translate-button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.result-section {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.language-select label {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.language-select input[type="radio"] {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.language-select img {
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 24px;
+    height: auto;
+}
+.result-section {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center; /* Center align the content */
+}
+
+.start-over-button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.start-over-button:hover {
+    background-color: #0056b3;
+}
+
